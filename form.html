@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Login</title>
+  <link rel="stylesheet" href="merdeka.css" />
+</head>
+<body>
+    <center><header><h1> Form Pendaftaran</h1></header></center>
+  <div class="container">
+   <div class="kepala"> 
+    <img src="merdeka.svg" width="100px">
+    <h2>Daftar</h2>
+    <img src="indonesia.svg" width="100px">  
+</div>
+
+    <form id="loginForm" onsubmit="return validateForm()">
+      <div class="form">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama anda" />
+      </div>
+      <div class="form">
+        <label for="nomerhp">Nomer Handphone:</label>
+        <input type="number" id="nomerhp" name="nomerhp" placeholder="Masukkan Nomer Handphone anda" />
+      </div>
+      <div class="form">
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat anda" />        
+         <p id="error-msg"></p>
+      </div>
+      <button type="submit">Daftar</button>
+    </form>
+  </div>
+  <script src="merdeka.js"></script>
+</body>
+</html>
